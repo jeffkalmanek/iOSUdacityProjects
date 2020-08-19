@@ -1,0 +1,17 @@
+Code examples for IOS Projects
+
+NOTE - want to make this a gitHub wiki but project must be public to enable wiki function.  When I have more time I'll just sync this to our group wiki
+and use Sublime Merge to manage it?
+
+Commands for committing Xcode projects.
+
+xCode is really-really crappy. Everytime you just look at files, a file called UserInterfaceState.xcuserstate is changed. You don't see it in the overview of xCode itself, through the command line you can.
+
+Quick fix:
+
+Open Terminal
+CD to your project directory, and type the following:
+git add .
+git commit -m "Commit"
+git push origin master
+
