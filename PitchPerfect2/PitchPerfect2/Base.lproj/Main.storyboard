@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xuT-Oy-OAI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xuT-Oy-OAI">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="100" id="PZ8-z0-T3P"/>
                                     <constraint firstAttribute="width" constant="100" id="tXb-tC-jJl"/>
                                 </constraints>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="tintColor" systemColor="darkTextColor"/>
                                 <state key="normal" image="Record"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEx-ov-DRW"/>
@@ -45,7 +47,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="A49-ey-iqh" firstAttribute="top" secondItem="oH2-GF-62b" secondAttribute="bottom" constant="10" id="D4X-SB-NOU"/>
                             <constraint firstItem="oH2-GF-62b" firstAttribute="top" secondItem="oxx-c7-ast" secondAttribute="bottom" constant="10" id="G5t-YP-IVd"/>
@@ -54,29 +57,28 @@
                             <constraint firstItem="A49-ey-iqh" firstAttribute="centerX" secondItem="oH2-GF-62b" secondAttribute="centerX" id="lQF-4e-R5i"/>
                             <constraint firstItem="oH2-GF-62b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wX2-jx-UV3"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="eg5-bG-cjp"/>
                     <connections>
                         <outlet property="recordButton" destination="oxx-c7-ast" id="fGN-tt-7KG"/>
                         <outlet property="recordingLabel" destination="oH2-GF-62b" id="Tbl-wD-DPt"/>
                         <outlet property="stopButton" destination="A49-ey-iqh" id="f0g-FJ-3Jp"/>
-                        <segue destination="tPf-DP-f2r" kind="show" identifier="stopRecording" id="hHL-TZ-Jiw"/>
+                        <segue destination="tPf-DP-f2r" kind="show" identifier="stopRecording" id="jGu-DR-HCW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="b3j-Wh-aol">
             <objects>
-                <viewController id="tPf-DP-f2r" sceneMemberID="viewController">
+                <viewController id="tPf-DP-f2r" customClass="PlaySoundsViewController" customModule="PitchPerfect2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kXw-L9-EEF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.87288056317098117" blue="0.70117321373633024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="owt-Eh-y8z"/>
+                        <color key="backgroundColor" red="1" green="0.87288056317098117" blue="0.70117321373633024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="BkH-s7-855"/>
                 </viewController>
@@ -106,5 +108,11 @@
     <resources>
         <image name="Record" width="155" height="155"/>
         <image name="Stop" width="155" height="155"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

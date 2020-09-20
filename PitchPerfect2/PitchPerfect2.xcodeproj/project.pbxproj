@@ -15,6 +15,7 @@
 		5B41B6ED24FC33260058C150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B41B6EB24FC33260058C150 /* LaunchScreen.storyboard */; };
 		5B41B6F824FC33280058C150 /* PitchPerfect2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41B6F724FC33280058C150 /* PitchPerfect2Tests.swift */; };
 		5B41B70324FC33280058C150 /* PitchPerfect2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41B70224FC33280058C150 /* PitchPerfect2UITests.swift */; };
+		5BA6D6532516E4FF00058C36 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6D6522516E4FF00058C36 /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5B41B6FE24FC33280058C150 /* PitchPerfect2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchPerfect2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B41B70224FC33280058C150 /* PitchPerfect2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfect2UITests.swift; sourceTree = "<group>"; };
 		5B41B70424FC33280058C150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BA6D6522516E4FF00058C36 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5B41B6E924FC33260058C150 /* Assets.xcassets */,
 				5B41B6EB24FC33260058C150 /* LaunchScreen.storyboard */,
 				5B41B6EE24FC33260058C150 /* Info.plist */,
+				5BA6D6522516E4FF00058C36 /* PlaySoundsViewController.swift */,
 			);
 			path = PitchPerfect2;
 			sourceTree = "<group>";
@@ -191,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Jeffrey Kalmanek";
 				TargetAttributes = {
 					5B41B6DC24FC33070058C150 = {
@@ -261,6 +264,7 @@
 			files = (
 				5B41B6E524FC33080058C150 /* RecordSoundsViewController.swift in Sources */,
 				5B41B6E124FC33080058C150 /* AppDelegate.swift in Sources */,
+				5BA6D6532516E4FF00058C36 /* PlaySoundsViewController.swift in Sources */,
 				5B41B6E324FC33080058C150 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +346,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -402,6 +407,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
