@@ -16,6 +16,7 @@
 		5B41B6F824FC33280058C150 /* PitchPerfect2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41B6F724FC33280058C150 /* PitchPerfect2Tests.swift */; };
 		5B41B70324FC33280058C150 /* PitchPerfect2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41B70224FC33280058C150 /* PitchPerfect2UITests.swift */; };
 		5BA6D6532516E4FF00058C36 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6D6522516E4FF00058C36 /* PlaySoundsViewController.swift */; };
+		5BD083AC2517F6D40080EC15 /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD083AB2517F6D40080EC15 /* playsoundsviewcontroller-audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5B41B70224FC33280058C150 /* PitchPerfect2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfect2UITests.swift; sourceTree = "<group>"; };
 		5B41B70424FC33280058C150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BA6D6522516E4FF00058C36 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		5BD083AB2517F6D40080EC15 /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				5B41B6EB24FC33260058C150 /* LaunchScreen.storyboard */,
 				5B41B6EE24FC33260058C150 /* Info.plist */,
 				5BA6D6522516E4FF00058C36 /* PlaySoundsViewController.swift */,
+				5BD083AB2517F6D40080EC15 /* playsoundsviewcontroller-audio.swift */,
 			);
 			path = PitchPerfect2;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B41B6E524FC33080058C150 /* RecordSoundsViewController.swift in Sources */,
+				5BD083AC2517F6D40080EC15 /* playsoundsviewcontroller-audio.swift in Sources */,
 				5B41B6E124FC33080058C150 /* AppDelegate.swift in Sources */,
 				5BA6D6532516E4FF00058C36 /* PlaySoundsViewController.swift in Sources */,
 				5B41B6E324FC33080058C150 /* SceneDelegate.swift in Sources */,
