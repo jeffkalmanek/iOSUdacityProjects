@@ -53,6 +53,9 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         
         // node for adjusting rate/pitch
         let changeRatePitchNode = AVAudioUnitTimePitch()
+        /* read the below statement as ' if pitch is not nil, then execute statement,
+         * else move on to the next statement
+         */
         if let pitch = pitch {
             changeRatePitchNode.pitch = pitch
         }
