@@ -55,7 +55,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
         }
     }
-    
+    /* with 'override' this is changing an existing method */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "stopRecording" {
             let playSoundsVC = segue.destination as! PlaySoundsViewController
@@ -63,7 +63,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             playSoundsVC.recordedAudioURL = recordedAudioURL
         }
     }
-    
+    /* good examples for manipulating booleans on binary opposite labels.  this is used by the IBAction functions start and stop recording. Note the shorthand notation with text strings */
     func configureUI(isRecording: Bool) {
            stopButton.isEnabled = isRecording
            recordButton.isEnabled = !isRecording
